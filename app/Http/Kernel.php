@@ -2,7 +2,9 @@
 
 namespace App\Http;
 
+use Spatie\Permission\Middleware\RoleMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use Spatie\Permission\Middleware\PermissionMiddleware;
 
 class Kernel extends HttpKernel
 {

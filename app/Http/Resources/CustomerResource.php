@@ -27,6 +27,7 @@ class CustomerResource extends JsonResource
             'sales_package_id' => $this->sales_package_id,
             'package_name' => $this->packages ? $this->packages->title : null,
             'package_price' => $this->packages ? $this->packages->price : null,
+            'order_status' => $this->order_status
         ];
     }
 }
