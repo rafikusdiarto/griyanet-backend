@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('price');
-            $table->enum('status', ['pending', 'accepted', 'rejected']);
             $table->timestamps();
         });
     }

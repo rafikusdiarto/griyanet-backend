@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('photo_ktp');
             $table->string('photo_rumah');
+            $table->enum('order_status', ['pending', 'accepted', 'rejected']);
             $table->foreign('sales_package_id')->references('id')->on('sales_packages')->cascadeOnUpdate()->nullOnDelete();
             $table->timestamps();
         });
